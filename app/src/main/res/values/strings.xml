@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AppCursoFirebaseKotlin</string>
+    <string name="valetemail">Ingrese su email</string>
+    <string name="valetpassword">Ingrese su password</string>
+    <string name="valbtnlogin">Autenticar a Firebase</string>
+    <string name="valtvtitulo">MULTI LOGIN FIREBASE</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="facebook_app_id">1799935756812460</string>
+    <string name="fb_login_protocol_scheme">fb1799935756812460</string>
+    <string name="valbtnlogingithub">AUTENTICAR A FIREBASE CON GIT</string>
+    <string name="valcerrar">Cerrar</string>
+</resources>
