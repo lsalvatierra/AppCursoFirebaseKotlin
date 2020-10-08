@@ -20,4 +20,10 @@
     <string name="fb_login_protocol_scheme">fb1799935756812460</string>
     <string name="valbtnlogingithub">AUTENTICAR A FIREBASE CON GIT</string>
     <string name="valcerrar">Cerrar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="valfragmentfoto">Fotos</string>
+    <string name="valfragmentgaleria">Galeria</string>
+    <string name="valbtntomarfoto">Tomar Foto</string>
+    <string name="valbtnsubirfoto">Subir foto a storage</string>
 </resources>

@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     private val callbackManager = CallbackManager.Factory.create()
     //4. Autenticación con GitHub
     private val random: SecureRandom = SecureRandom()
-    //4. Colocar este valor en el Callback de GIT
+    //4. Colocar este valor en el Callback de GIT y agregar en el filtro del activity en el Manifest.xml
     private val URL_CALLBACK = "qbodev://git.oauth2token"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -150,7 +150,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
+    //4. Autenticación con Github
     private fun obtenerCredencial(code: String, state: String) {
         //POST https://github.com/login/oauth/access_token
         val okHttpClient = OkHttpClient()
@@ -182,7 +182,7 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
-
+    //4. Autenticación con Github
     fun loginGitHubConToken(token: String) {
         //Habilitar la autenticación con una misma cuenta para varios proveedores en Firebase
         val credential = GithubAuthProvider.getCredential(token)
@@ -199,7 +199,7 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
-
+    //4. Autenticación con Github
     private fun getRandomString(): String {
         return BigInteger(130, random).toString(32)
     }

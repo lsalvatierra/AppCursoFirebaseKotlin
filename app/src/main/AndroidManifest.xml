@@ -3,6 +3,10 @@
     package="qbo.com.appcursofirebasekotlin">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--5. Ejemplo de la camára -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera2" android:required="true">
+    </uses-feature>
 
     <application
         android:allowBackup="true"
@@ -37,6 +41,16 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <!--5. Ejemplo de la camára -->
+        <provider
+            android:authorities="qbo.com.appcursofirebasekotlin.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+            </meta-data>
+        </provider>
     </application>
 
 </manifest>
