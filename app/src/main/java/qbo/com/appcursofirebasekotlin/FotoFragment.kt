@@ -38,7 +38,8 @@ class FotoFragment : Fragment() {
     2. Crear un archivo file_paths.xml y agregar la ubicación
     3. Agregar el provider al manifest, con el nombre del pequete del Py.
      */
-
+    //Cambiar la regla de acceso a Firestore
+    //allow read, write: if request.auth != null;
     private val CAMERA_REQUEST = 1888
     var mRutaFotoActual = ""
     private lateinit var ivfoto: ImageView
