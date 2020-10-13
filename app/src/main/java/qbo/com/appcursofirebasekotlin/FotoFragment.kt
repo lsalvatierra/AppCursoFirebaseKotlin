@@ -143,10 +143,7 @@ class FotoFragment : Fragment() {
             }
         }
     }
-
-
-
-
+    //10. Llamamos a la cámara a traves del Intent.
     private fun mostrarFoto() {
         val ei = ExifInterface(mRutaFotoActual)
         val orientation: Int = ei.getAttributeInt(
@@ -172,9 +169,8 @@ class FotoFragment : Fragment() {
         ivfoto.setImageBitmap(bitmap)
 
     }
+    //11. Grabar Foto en la galeria del dispositivo.
     private fun grabarFotoGaleria() {
-        //val mediaScanIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        //val mediaScanIntent = Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE)
         val mediaScanIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         val nuevoarchivo = File(mRutaFotoActual)
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
@@ -189,7 +185,7 @@ class FotoFragment : Fragment() {
         activity?.sendBroadcast(mediaScanIntent)
     }
 
-
+    //12. Llama el resultado del Intent
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         grabarFotoGaleria();

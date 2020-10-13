@@ -26,4 +26,11 @@
     <string name="valfragmentgaleria">Galeria</string>
     <string name="valbtntomarfoto">Tomar Foto</string>
     <string name="valbtnsubirfoto">Subir foto a storage</string>
+    <string name="valtituloregistro">Registrar Persona Firestore</string>
+    <string name="valetnombre">Ingrese nombre</string>
+    <string name="valetapellido">Ingrese apellido</string>
+    <string name="valetedad">Ingrese edad</string>
+    <string name="valbtnregistrar">Registrar Persona</string>
+    <string name="valfragmentreg">Registro Firestore</string>
+    <string name="valfragmentlista" >Lista Firestore</string>
 </resources>

@@ -14,4 +14,14 @@
         android:name="qbo.com.appcursofirebasekotlin.GaleriaFragment"
         android:label="@string/valfragmentgaleria"
         tools:layout="@layout/fragment_galeria" />
+    <fragment
+        android:id="@+id/nav_registro_fragment"
+        android:name="qbo.com.appcursofirebasekotlin.RegistroFragment"
+        android:label="@string/valfragmentreg"
+        tools:layout="@layout/fragment_registro" />
+    <fragment
+        android:id="@+id/nav_lista_fragment"
+        android:name="qbo.com.appcursofirebasekotlin.ListaPersonaFragment"
+        android:label="@string/valfragmentlista"
+        tools:layout="@layout/fragment_lista_persona" />
 </navigation>
