@@ -24,6 +24,8 @@ import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.*
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
 import java.io.IOException
@@ -147,7 +149,20 @@ class MainActivity : AppCompatActivity() {
             if (code != null && state != null)
                 obtenerCredencial(code, state)
         }
+        obtenerTokenDispositivo()
+    }
 
+    private fun obtenerTokenDispositivo(){
+        //1.Notificaciones por Token
+        FirebaseInstanceId.getInstance()
+            .instanceId.addOnCompleteListener {
+                it.result?.token?.let { token->
+                    Log.i("TOKENFIRE", "El token del disposito es $token")
+                }
+            }
+        //2.Notificaciones por Tema
+        FirebaseMessaging.getInstance().subscribeToTopic("qboinstitute")
+   
     }
 
     //4. Autenticación con Github
